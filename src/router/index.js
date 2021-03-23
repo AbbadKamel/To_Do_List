@@ -6,7 +6,13 @@ const routes = [
     path: "/",
     name: "home",
     component: Home,
-    
+    beforeEnter: (to, from, next) => {
+      if (store.state.account.token) {
+        next();
+      } else {
+        next("/login");
+      }
+    },
   },
   {
     path: "/About",
@@ -23,9 +29,19 @@ const routes = [
     path: "/login",
     name: "login",
     component: () => import("../views/Login.vue"),
-    
+    beforeEnter: (to, from, next) => {
+      if (store.state.account.token) {
+        next("/");
+      } else {
+        next();
+      }
+    },
   },
 ];
 
+const router = createRouter({
+  history: createWebHistory(process.env.BASE_URL),
+  routes,
+});
 
 export default router;
