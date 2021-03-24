@@ -41,9 +41,9 @@ export const deleteTodoList = ({ commit }, data) => {
   axios
     .delete("todolist/" + id)
     .then((response) => {
-      updatedata["status"] = response.status;
       commit("deleteTodoList", id);
       commit("errorModifyMessagetodo", "");
+      updatedata["status"] = response.status;
       return updatedata;
     })
     .catch((e) => {
