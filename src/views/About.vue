@@ -5,9 +5,47 @@
     </head>
     <body>
       <div class="cadre">
+        <p>
+      This is a  hybride mobile application built with the Vue.js framework.
+It offers a list Rearrangement.
+The user can create his own lists ,name them and fill them with the tasks he needed to be done .
+Few more options are availabe such as modifying the todos and lists ,deleting and updating them
+The user must create an account  and sign in securely with a password          <br />
         
-      </div>
+        </p>
+        <ul align='left'> <h3 >The tasks achieved:</h3>  
+            
+            <li>
+              Creation of account 
+            </li>
+                 <li>
+                    Authentification in API 
+                </li>
+                <li>
+                  Consult, Create and delete of todoList
+                  </li>
+                  <li>
+                    Consult, Create, modify and delete of ToDo
+                    </li>
+          </ul>
+            <ul align='left'> <h3 >Resources used:</h3>  
+            
+            <li>
+              FONT AWESOME ICON https://www.npmjs.com/package/@fortawesome/vue-fontawesomes 
+            </li>
+            <li>
+               Router folder https://router.vuejs.org/api/#mode
+              </li>
+                 <li>
+                   NavBar https://codepen.io/mutedblues/pen/MmPNPG
+                </li>
+                <li>
+                    SideBar https://www.codingnepalweb.com/2020/04/side-navigation-menu-bar-in-html-css.html
+                  </li>
 
+          </ul>
+      </div>
+  <br>
       <div class="row">
         <div class="column">
           <div class="card">

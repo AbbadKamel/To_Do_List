@@ -3,18 +3,18 @@
 <header class="header">
 
     <router-link :to="{name: 'home'}">
-      <img src="../assets/todo.png" alt="Logo Todo" id="our_logo">
+      <img src="../assets/tod.jpg" alt="Logo Todo" id="our_logo">
     </router-link>
 
-    <input 
-      type="checkbox" 
-      id="menu-btn" 
-      class="menu-btn" 
+    <input
+      type="checkbox"
+      id="menu-btn"
+      class="menu-btn"
     />
-    <label 
+    <label
       for="menu-btn"
-      class="menu-icon" 
-    > <span 
+      class="menu-icon"
+    > <span
         class="navicon"
       >
       </span>
@@ -23,10 +23,10 @@
     <ul class="menu">
 
       <li>
-        <router-link  
-          :to="{name: 'about'}" 
+        <router-link
+          :to="{name: 'about'}"
           class="btn_menu"
-        > About us 
+        > About us
         </router-link>
       </li>
       <li>
